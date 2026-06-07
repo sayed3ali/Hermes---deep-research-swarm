@@ -2,7 +2,7 @@
 name: deep-research-swarm
 type: standard
 description: >
-  Multi-agent deep research orchestration with adaptive routing. Use this skill
+  Multi-agent deep research mainly designed for Academic research. Use this skill
   whenever comprehensive, multi-dimensional, evidence-backed investigation is
   required: competitive intelligence, market analysis, controversy investigation,
   policy evaluation, academic landscape review, risk assessment, file-based

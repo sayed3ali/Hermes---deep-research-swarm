@@ -4,7 +4,7 @@
 **License**: MIT  
 **Author**: Sayed Ali
 
-Multi-agent deep research orchestration with adaptive routing. Use this skill whenever comprehensive, multi-dimensional, evidence-backed investigation is required: competitive intelligence, market analysis, controversy investigation, policy evaluation, academic landscape review, risk assessment, file-based analysis, or any task demanding cross-verified, multi-source findings.
+Multi-agent deep research mainly designed for Academic research. Use this skill whenever comprehensive, multi-dimensional, evidence-backed investigation is required: competitive intelligence, market analysis, controversy investigation, policy evaluation, academic landscape review, risk assessment, file-based analysis, or any task demanding cross-verified, multi-source findings.
 
 **Do NOT use for simple factual lookup or single-source Q&A.**
 
@@ -19,6 +19,26 @@ The deep-research-swarm skill orchestrates multiple AI agents to conduct thoroug
 - **Cross-verifies findings** — detects contradictions, assesses confidence, and flags conflicts
 - **Produces polished output** — generates academic narrative reports (DOCX), presentations (PPTX), or data tables (XLSX)
 - **Prioritizes free academic sources** — uses open-access repositories when available
+
+---
+
+## How It Differs from Default Hermes `web_search`
+
+Hermes' built-in `web_search` is a single-shot lookup: one agent issues a query, reads the top results, and answers inline. It is fast and ideal for "what is X" or "who said Y" questions. This skill is a different class of tool — an **orchestrated research pipeline** built for questions where one pass and one perspective are not enough.
+
+| | Default `web_search` | deep-research-swarm |
+|---|---|---|
+| **Agents** | Single agent, single query | Swarm of parallel sub-agents, one per research dimension |
+| **Coverage** | Top results for one phrasing | Topic decomposed into dimensions, each searched independently for breadth + depth |
+| **Verification** | Takes results at face value | Cross-verifies across sources — detects overlaps, flags contradictions, scores confidence |
+| **Evidence** | Snippets in the reply | Structured evidence records (Claim / Source / URL / Date / Excerpt / Context / Confidence) |
+| **Sourcing** | Whatever the engine returns | Prioritizes free open-access academic sources (CORE, OpenAlex, arXiv, PubMed Central, DOAJ) |
+| **Output** | Text in chat | Persisted artifacts + a polished academic report (DOCX), with PPTX/XLSX options |
+| **Citations** | Informal links | Cite Them Right Harvard referencing throughout |
+| **Persistence** | None | Dimension files, cross-verification notes, and the final report saved under `{workspace}/research/` |
+| **Routing** | One mode | Adaptive routes — wide search, focused search, file-only, and file-augmented research |
+
+**In short:** use `web_search` for a quick fact; use this skill when you need a defensible, evidence-backed, well-cited investigation — especially academic research where source quality, triangulation, and a structured written deliverable matter. The trade-off is cost and time: the swarm spawns many agents and runs in rounds, so it is deliberately heavier than a single search.
 
 ---
 
