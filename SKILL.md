@@ -10,7 +10,7 @@ description: >
   wide search, focused search, file-only research, and file-augmented research.
   Do NOT use for simple factual lookup or single-source Q&A.
 version: 1.1.2
-author: Hermes Agent
+author: Sayed Ali
 license: MIT
 metadata:
   hermes:

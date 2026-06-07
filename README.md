@@ -2,7 +2,7 @@
 
 **Version**: 1.1.2  
 **License**: MIT  
-**Author**: Hermes Agent
+**Author**: Sayed Ali
 
 Multi-agent deep research orchestration with adaptive routing. Use this skill whenever comprehensive, multi-dimensional, evidence-backed investigation is required: competitive intelligence, market analysis, controversy investigation, policy evaluation, academic landscape review, risk assessment, file-based analysis, or any task demanding cross-verified, multi-source findings.
 
